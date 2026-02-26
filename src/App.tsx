@@ -166,7 +166,7 @@ const Splash = ({ onComplete }: { onComplete: (lang: string) => void }) => {
 
   return (
     <div className="fixed inset-0 bg-[#002135] z-[200000] flex items-center justify-center text-white">
-      <div className="relative flex flex-col items-center justify-center" style={{ width: 320, marginTop: '-48px' }}>
+      <div className="relative flex flex-col items-center justify-center" style={{ width: 320, marginTop: '-60px' }}>
         <img
           src="https://firebasestorage.googleapis.com/v0/b/websitey-9f8e4.firebasestorage.app/o/educater.gif?alt=media&token=9176e9e2-8b3f-48cd-b5ae-a57d52e33182"
           alt="Educater Splash GIF"

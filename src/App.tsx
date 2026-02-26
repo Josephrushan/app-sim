@@ -166,13 +166,13 @@ const Splash = ({ onComplete }: { onComplete: (lang: string) => void }) => {
 
   return (
     <div className="fixed inset-0 bg-[#002135] z-[200000] flex items-center justify-center text-white">
-      <div className="flex flex-col items-center justify-center" style={{ width: 320 }}>
+      <div className="relative flex flex-col items-center justify-center" style={{ width: 320 }}>
         <img
           src="https://firebasestorage.googleapis.com/v0/b/websitey-9f8e4.firebasestorage.app/o/educater.gif?alt=media&token=9176e9e2-8b3f-48cd-b5ae-a57d52e33182"
           alt="Educater Splash GIF"
-          style={{ marginBottom: '16px', marginTop: '-24px', width: '320px', height: 'auto', objectFit: 'contain' }}
+          style={{ width: '320px', height: 'auto', objectFit: 'contain' }}
         />
-        <div className="flex flex-col items-center gap-2">
+        <div className="absolute left-0 w-full flex flex-col items-center gap-2" style={{ bottom: '0', zIndex: 2, paddingBottom: '0', top: '80%' }}>
           <p className="text-base font-semibold">{TRANSLATIONS.English.selectLanguage}</p>
           <div className="flex gap-2">
             {['English', 'Afrikaans', 'isiXhosa'].map((l) => (

@@ -167,20 +167,12 @@ const Splash = ({ onComplete }: { onComplete: (lang: string) => void }) => {
   return (
     <div className="fixed inset-0 bg-[#011827] z-[200000] flex flex-col items-center justify-center text-white">
       {/* animation/gif/video centered */}
-      <video
-        width="200"
-        onEnded={(e) => {
-          // pause on last frame - the video naturally stops
-          (e.target as HTMLVideoElement).pause();
-        }}
-        autoPlay
-        muted
-        playsInline
-        className="mb-8"
-      >
-        <source src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/websitey-9f8e4.firebasestorage.app/o/educater.gif?alt=media&token=9176e9e2-8b3f-48cd-b5ae-a57d52e33182"
+          width="200"
+          alt="Educater Splash GIF"
+          className="mb-8"
+        />
       {/* language choices visible immediately */}
       <div className="flex flex-col items-center gap-4">
         <p className="text-lg font-semibold">{TRANSLATIONS.English.selectLanguage}</p>

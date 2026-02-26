@@ -1,0 +1,12 @@
+<!-- iPhone 16 Pro Max SVG Frame (393x852 viewport, 430x932 outer) -->
+<svg width="430" height="932" viewBox="0 0 430 932" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" width="428" height="930" rx="48" fill="#222" stroke="#bbb" stroke-width="2"/>
+  <!-- Notch -->
+  <rect x="155" y="10" width="120" height="18" rx="9" fill="#111"/>
+  <!-- Speaker -->
+  <rect x="205" y="15" width="20" height="4" rx="2" fill="#333"/>
+  <!-- Camera Dot -->
+  <circle cx="190" cy="19" r="3" fill="#333"/>
+  <!-- Screen area (for reference, not visible) -->
+  <rect x="18.5" y="40" width="393" height="852" rx="36" fill="none" stroke="#444" stroke-width="0.5"/>
+</svg>

@@ -181,7 +181,7 @@ const Splash = ({ onComplete }: { onComplete: (lang: string) => void }) => {
               <button
                 key={l}
                 onClick={() => choose(l)}
-                className="px-2 py-1 bg-black text-white rounded-full text-xs hover:bg-gray-800 transition-colors"
+                className={`px-2 py-1 rounded-full text-xs text-white transition-colors bg-black hover:bg-[#00dfa2] focus:bg-[#00dfa2] active:bg-[#00dfa2]`}
               >
                 {l}
               </button>

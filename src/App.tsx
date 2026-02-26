@@ -169,9 +169,9 @@ const Splash = ({ onComplete }: { onComplete: (lang: string) => void }) => {
       <div className="relative flex flex-col items-center justify-center" style={{ width: 320 }}>
         <img
           src="https://firebasestorage.googleapis.com/v0/b/websitey-9f8e4.firebasestorage.app/o/educater.gif?alt=media&token=9176e9e2-8b3f-48cd-b5ae-a57d52e33182"
-          width="320"
           alt="Educater Splash GIF"
-          className="absolute top-0 left-0 w-full h-full z-0"
+          className="absolute left-0 w-full z-0"
+          style={{ top: '-24px', objectFit: 'contain' }}
         />
         <div className="flex flex-col items-center gap-2 z-10 pt-8">
           <p className="text-base font-semibold">{TRANSLATIONS.English.selectLanguage}</p>

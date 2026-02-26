@@ -174,7 +174,7 @@ const Splash = ({ onComplete }: { onComplete: (lang: string) => void }) => {
           className="mb-6"
         />
       {/* language choices visible immediately */}
-        <div className="flex flex-col items-center gap-2 mt-[-32px]">
+        <div className="flex flex-col items-center gap-2 mt-[-56px]">
           <p className="text-base font-semibold">{TRANSLATIONS.English.selectLanguage}</p>
           <div className="flex gap-2">
             {['English', 'Afrikaans', 'isiXhosa'].map((l) => (

@@ -169,25 +169,25 @@ const Splash = ({ onComplete }: { onComplete: (lang: string) => void }) => {
       {/* animation/gif/video centered */}
         <img
           src="https://firebasestorage.googleapis.com/v0/b/websitey-9f8e4.firebasestorage.app/o/educater.gif?alt=media&token=9176e9e2-8b3f-48cd-b5ae-a57d52e33182"
-          width="200"
+          width="320"
           alt="Educater Splash GIF"
-          className="mb-8"
+          className="mb-6"
         />
       {/* language choices visible immediately */}
-      <div className="flex flex-col items-center gap-4">
-        <p className="text-lg font-semibold">{TRANSLATIONS.English.selectLanguage}</p>
-        <div className="flex gap-4">
-          {['English', 'Afrikaans', 'isiXhosa'].map((l) => (
-            <button
-              key={l}
-              onClick={() => choose(l)}
-              className="px-3 py-1 bg-black text-white rounded-full text-sm hover:bg-gray-800 transition-colors"
-            >
-              {l}
-            </button>
-          ))}
+        <div className="flex flex-col items-center gap-2 mt-[-32px]">
+          <p className="text-base font-semibold">{TRANSLATIONS.English.selectLanguage}</p>
+          <div className="flex gap-2">
+            {['English', 'Afrikaans', 'isiXhosa'].map((l) => (
+              <button
+                key={l}
+                onClick={() => choose(l)}
+                className="px-2 py-1 bg-black text-white rounded-full text-xs hover:bg-gray-800 transition-colors"
+              >
+                {l}
+              </button>
+            ))}
+          </div>
         </div>
-      </div>
     </div>
   );
 };
